@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: "15a805f2-8120-4a3c-9afa-8218e85d9413"
+      url: "https://www-jimtyhurst-v1-0-quarto.netlify.app"
