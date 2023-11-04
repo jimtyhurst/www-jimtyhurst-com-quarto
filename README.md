@@ -1,7 +1,5 @@
 # Source code for jimtyhurst.com
 
-https://jimtyhurst.com
-
 **Contents**
 
 * [Developing the site](#developing-the-site)
@@ -20,9 +18,7 @@ quarto preview
 
 ```shell
 # Builds the site for production serving.
-gatsby build
-# -or-
-npm run build
+quarto render
 ```
 
 ## Deploying the site
