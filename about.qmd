@@ -1,0 +1,25 @@
+---
+title: "About"
+---
+
+I am an experienced software engineer with a Ph.D. in Linguistics, working in:
+
+- machine learning
+- natural language processing.
+- data engineering
+- statistical analysis
+
+My past enterprise architect experience is proving useful to productize new machine
+learning applications that have been prototyped by data scientists.
+My understanding of alternative architectures leads to well-structured, maintainable code,
+based on design patterns when appropriate and supported by automated unit tests.
+
+I have delivered:
+
+- AI applications.
+- Data pipelines.
+- ML models.
+- Enterprise application code with unit tests.
+- Instruction and mentoring in development processes.
+- Requirements specifications, including stories, use cases, and UML models.
+- Executable Architecture: Framework classes and application infrastructure.

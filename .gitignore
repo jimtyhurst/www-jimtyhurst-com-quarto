@@ -1,0 +1,20 @@
+# Quarto
+.quarto/
+_site
+
+# PyCharm
+.idea/
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac OS-specific storage files
+.DS_Store
+
+
+/.quarto/

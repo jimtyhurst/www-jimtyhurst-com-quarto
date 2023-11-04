@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 8000
+    browser: true
+
+execute:
+  freeze: auto
+
+website:
+  title: "Jim Tyhurst, PhD"
+  description: "Jim Tyhurst's website"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+  search: true
+  twitter-card:
+    card-style: summary
+    creator: "@jimtyhurst"
+    site: "@jimtyhurst"
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+    embed-resources: true
+    link-external-icon: true
+    link-external-newwindow: true

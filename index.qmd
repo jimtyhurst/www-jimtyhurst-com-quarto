@@ -1,0 +1,28 @@
+---
+image: profile-photo.jpg
+
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/jimtyhurst
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jimtyhurst
+    - icon: mastodon
+      text: Mastodon
+      href: https://fosstodon.org/@jimtyhurst
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/jimtyhurst
+
+format:
+  html:
+    toc: false
+---
+
+# Jim Tyhurst, PhD
+
+Machine Learning Engineer<br>
+Portland, Oregon, United States
