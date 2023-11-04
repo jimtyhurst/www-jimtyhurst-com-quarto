@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am an experienced software engineer with a Ph.D. in Linguistics, working in:\n\nmachine learning\nnatural language processing.\ndata engineering\nstatistical analysis\n\nMy past enterprise architect experience is proving useful to productize new machine learning applications that have been prototyped by data scientists. My understanding of alternative architectures leads to well-structured, maintainable code, based on design patterns when appropriate and supported by automated unit tests.\nI have delivered:\n\nAI applications.\nData pipelines.\nML models.\nEnterprise application code with unit tests.\nInstruction and mentoring in development processes.\nRequirements specifications, including stories, use cases, and UML models.\nExecutable Architecture: Framework classes and application infrastructure."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jim Tyhurst, PhD",
+    "section": "",
+    "text": "Jim Tyhurst, PhD\nMachine Learning Engineer Portland, Oregon, United States"
+  }
+]

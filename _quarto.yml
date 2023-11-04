@@ -6,7 +6,7 @@ project:
     browser: true
 
 execute:
-  freeze: auto
+  freeze: true
 
 website:
   title: "Jim Tyhurst, PhD"
