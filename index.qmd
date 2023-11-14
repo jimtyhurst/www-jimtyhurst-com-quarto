@@ -1,5 +1,5 @@
 ---
-image: profile-photo.jpg
+image: resources/profile-photo.jpg
 
 about:
   template: jolla
