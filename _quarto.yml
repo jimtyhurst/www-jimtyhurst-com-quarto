@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - "*.pdf"
   preview:
     port: 8000
     browser: true
@@ -16,6 +18,9 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - resume.qmd
+      - blog.qmd
+    background: primary
   search: true
   twitter-card:
     card-style: summary
@@ -24,7 +29,9 @@ website:
 
 format:
   html:
-    theme: lux
+    theme:
+      light: litera
+      dark: darkly
     css: styles.css
     toc: true
     embed-resources: true
