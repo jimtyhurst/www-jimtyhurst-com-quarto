@@ -4,14 +4,58 @@ title: "Resume"
 
 Machine Learning Engineer ([PDF resume](./resources/Jim_Tyhurst-Resume-ML_Engineer.pdf))
 
-I have been an independent consultant since 2000, contracting with companies who need
-to write their own software.
-I have worked in the roles of machine learning engineer, data engineer, application architect,
-R developer, and Enterprise Java developer.
+## Expertise
 
-I have used machine learning, rule-based systems, object-oriented design,
-functional languages, artificial intelligence techniques, relational databases,
-and NoSQL databases.
-My understanding of alternative architectures leads to well-structured,
-maintainable code based on design patterns when appropriate and supported by
-automated unit tests.
+I am an experienced machine learning engineer with a Ph.D. in Linguistics, working in:
+
+- machine learning
+- natural language processing.
+- data engineering
+- feature engineering
+- statistical analysis
+- software engineering
+- enterprise application architecture
+
+## Getting applications to production
+
+My past enterprise architect experience is proving useful to productize new machine
+learning applications that have been prototyped by data scientists.
+My understanding of alternative architectures leads to well-structured maintainable code,
+based on design patterns when appropriate and supported by automated unit tests.
+
+I have delivered:
+
+- AI applications.
+- Data pipelines.
+- ML models.
+- Enterprise application code with unit tests and integration tests.
+- Web services.
+- Instruction and mentoring in development processes.
+- Requirements specifications, including stories, use cases, and UML models.
+- Executable Architecture: Framework classes and application infrastructure.
+
+
+## Roles
+
+- Machine Learning Engineer
+- Data Engineer
+- Application Architect
+- R Developer
+- Enterprise Java developer
+- Instructor
+
+## Technologies
+
+- Machine learning
+- Artificial Intelligence techniques
+- Rule-based systems
+- Object-oriented design
+- Functional languages
+- Relational databases
+- NoSQL databases
+
+## Education
+
+- PhD in Linguistics
+- BS in Computer Science
+- BA in Mathematics
