@@ -6,13 +6,13 @@ Machine Learning Engineer ([PDF resume](./resources/Jim_Tyhurst-Resume-ML_Engine
 
 ## Expertise
 
-I am an experienced machine learning engineer with a Ph.D. in Linguistics, working in:
+I am an experienced ML Engineer with a Ph.D. in Linguistics, working in:
 
 - machine learning
-- natural language processing.
 - data engineering
 - feature engineering
 - statistical analysis
+- natural language processing
 - software engineering
 - enterprise application architecture
 
@@ -25,21 +25,23 @@ based on design patterns when appropriate and supported by automated unit tests.
 
 I have delivered:
 
-- AI applications.
-- Data pipelines.
-- ML models.
-- Enterprise application code with unit tests and integration tests.
-- Web services.
-- Instruction and mentoring in development processes.
-- Requirements specifications, including stories, use cases, and UML models.
-- Executable Architecture: Framework classes and application infrastructure.
+- AI applications
+- Data pipelines
+- ML models
+- Enterprise application code with unit tests and integration tests
+- Web services
+- Instruction and mentoring in development processes
+- Requirements specifications, including stories, use cases, and UML models
+- Executable Architecture: Framework classes and application infrastructure
 
 
-## Roles
+## Previous roles
 
 - Machine Learning Engineer
 - Data Engineer
+- Software Engineer
 - Application Architect
+- Enterprise Architect
 - R Developer
 - Enterprise Java developer
 - Instructor
