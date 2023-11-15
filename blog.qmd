@@ -16,3 +16,5 @@ title-block-banner: false
 - [10 Git Commands for Collaborating](posts/2021-03-14-Ten-Git-Commands-for-Collaborating/) -
  A short tutorial to learn just enough Git and GitHub to contribute to an
  open source project with confidence.
+
+## Complete Index
