@@ -1,7 +1,7 @@
 ---
-title: "Blog"
+title: "Papers"
 listing:
-  contents: posts
+  contents: papers
   sort: "date desc"
   type: default
   categories: true
