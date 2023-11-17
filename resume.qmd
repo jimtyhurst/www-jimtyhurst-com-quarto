@@ -59,5 +59,74 @@ I have delivered:
 ## Education
 
 - PhD in Linguistics
+- MA in Linguistics
 - BS in Computer Science
 - BA in Mathematics
+
+### Ph.D. in [Linguistics](https://linguistics.ucla.edu/ph-d-recipients/)
+Dissertation: "[Logical Forms for English Sentences](https://linguistics.ucla.edu/general/dissertations/Tyhurst.1990.pdf)"<br>
+University of California, Los Angeles ([UCLA](https://linguistics.ucla.edu/ph-d-recipients/))
+
+My dissertation investigated the relationship between syntactic structure and semantic interpretation,
+in order to develop an explicit model of the mapping from surface syntactic forms to a level of
+Logical Form (LF) and finally to truth values. The mapping from surface structure to LF was done within
+the framework of the [Government and Binding](https://en.wikipedia.org/wiki/Government_and_binding_theory) (GB)
+theory of grammar.
+A computationally tractable interpretation algorithm was given for mapping logical forms onto
+truth values within an extensional [model-theory semantics](https://plato.stanford.edu/entries/model-theory/).
+The algorithm for interpreting logical forms was based on
+work in [generalized quantifiers](https://plato.stanford.edu/entries/generalized-quantifiers/),
+which enables one to provide a uniform interpretation for a wide range of determiners,
+including those which are not first-order definable (e.g. "most") and those constructed
+from [Boolean](https://www.gutenberg.org/ebooks/36884) combinations of determiners
+(e.g. "some but not all", "at least six but not more than twelve").
+I also gave an analysis of referentially dependent noun phrases that inherently require
+a higher-order analysis, such as [reciprocals](https://en.wikipedia.org/wiki/Reciprocal_pronoun)
+(e.g. "each other", "each other's children").
+
+Honors: [W.M. Keck Research Award](https://www.wmkeck.org/research-overview/)
+for "Semantic Representations for English" project on the Connection Machine.
+
+### M.A. [Linguistics](https://linguistics.ucla.edu/)
+Thesis: "[Tone in Kenyang Noun Phrases](http://www.language-archives.org/item/oai:gial.edu:22494)"<br>
+University of California, Los Angeles ([UCLA](https://linguistics.ucla.edu/))
+
+### B.S. [Computer Science](https://www.cs.uci.edu/)
+University of California, Irvine ([UCI](https://www.uci.edu/))<br>
+
+### B.A. [Mathematics](https://www.math.uci.edu/)
+University of California, Irvine ([UCI](https://www.uci.edu/))<br>
+
+Honors: Graduated _Cum Laude_ in both bachelor's degrees.
+
+## Lifelong learning
+
+[Preparing for Google Cloud Architect Professional Certificate](https://www.coursera.org/professional-certificates/gcp-cloud-architect#courses).
+2021-11-28.
+[Google 7-Course Specialization](https://www.coursera.org/professional-certificates/gcp-cloud-architect).
+[Coursera](https://www.coursera.org/).
+
+[Machine Learning with TensorFlow on Google Cloud](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp#courses).
+2018-12-18.
+[Google 5-Course Specialization](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp).
+[Coursera](https://www.coursera.org/).
+
+[Building R Packages](https://www.coursera.org/learn/r-packages).
+2018-04-28.
+[Johns Hopkins University](https://www.coursera.org/jhu).
+[Coursera](https://www.coursera.org/).
+
+[Introduction à la statistique avec R](https://lms.fun-mooc.fr/courses/UPSUD/42001S06/session06/ed827b15762542189af573ef096521f3/).
+2016-11-24.
+[Université Paris-Sud](https://www.fun-mooc.fr/fr/etablissements/universite-paris-saclay/).
+[FUN MOOC](https://www.fun-mooc.fr/fr/cours/?limit=21&offset=0&query=statistique).
+
+[Web sémantique et Web de données](https://lms.fun-mooc.fr/courses/inria/41002S02/session02/26a7ae9651d745fc998d2ec72ae37535/).
+2016-05-26.
+[Inria](https://www.fun-mooc.fr/fr/etablissements/inria/).
+[FUN MOOC](https://www.fun-mooc.fr/fr/cours/?limit=21&offset=0&query=statistique).
+
+Several [Data Science and R courses](https://www.coursera.org/specializations/jhu-data-science#courses).
+2014.
+[Johns Hopkins University](https://www.coursera.org/specializations/jhu-data-science).
+[Coursera](https://www.coursera.org/).
