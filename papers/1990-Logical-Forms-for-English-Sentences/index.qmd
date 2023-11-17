@@ -1,0 +1,13 @@
+---
+title: 'Logical Forms for English Sentences'
+description: This Ph.D. dissertation investigated the relationship between syntactic structure and
+  semantic interpretation, in order to develop an explicit model of the mapping from
+  surface syntactic forms to a level of Logical Form (LF) and finally to truth values.
+date: '1990-05-31'
+categories: [semantics, linguistics]
+format: html
+---
+
+Tyhurst, James J. 1990. "Logical Forms for English Sentences". Ph.D. dissertation at the University of California, Los Angeles.
+
+PDF document: [JimTyhurst-1990-Dissertation-Logical_Forms.pdf](./JimTyhurst-1990-Dissertation-Logical_Forms.pdf)
