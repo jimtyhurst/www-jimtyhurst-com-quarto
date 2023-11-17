@@ -8,9 +8,4 @@ freeze: auto
 title-block-banner: true
 toc: true
 page-layout: article
-citation: true
-
-author:
-  - name: Jim Tyhurst
-    url: https://jimtyhurst.com
-    orcid: 0000-0001-7494-3632
+citation: false
