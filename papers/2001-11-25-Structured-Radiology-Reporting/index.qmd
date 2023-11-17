@@ -1,0 +1,40 @@
+---
+title: 'Structured radiology reporting: A 4 year case study of 160,000 reports'
+description: This paper analyzes the use of structured radiology reports,
+  including the ability to produce natural English sentences from structured input.
+date: '2001-11-25'
+categories: [radiology, natural language generation]
+format: html
+---
+
+Berman, Gerald D., Richard N. Gray, David Liu, and James J. Tyhurst.
+2001.
+"Structured radiology reporting: A 4 year case study of 160,000 reports".
+Presented at the Integrating the Healthcare Enterprise (IHE) Symposium of the
+Radiological Society of North America (RSNA) 2001 Annual Meeting,
+November 25 - 30, 2001.
+
+PDF document: [structurad-rsna-2001.pdf](./structurad-rsna-2001.pdf)
+
+## Abstract
+
+This paper analyzes the use of structured radiology reports since 1997 at
+Midway Hospital Medical Center, which is a full-modality 150-bed
+community hospital located in Los Angeles, California.
+We describe the transition from a conventional transcription-based reporting
+system to one in which radiologists create reports for twelve radiology
+modalities directly through a structured reporting system.
+More than 160,000 structured radiology reports have been produced with
+the structured system.
+
+Compared to transcription, the structured reporting system has:
+
+1. Improved the quality and consistency of reports.
+2. Enabled instantaneous dissemination of reports to improve patient
+care and to decrease hospital stays.
+3. Eliminated transcription costs.
+4. Automated abstraction of reports with CPT and ICD-9 codes.
+
+The success of this system depends crucially on the completeness of
+structured report templates, as well as the ability to produce
+natural English sentences from structured input.
