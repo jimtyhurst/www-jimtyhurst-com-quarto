@@ -1,0 +1,19 @@
+---
+title: 'Services that reach from the inside out'
+description: "This presentation describes a design pattern for an enterprise
+  application to communicate with an external third-party service."
+date: '2006-07-19'
+categories: [design patterns, enterprise applications]
+format: html
+---
+
+## Citation
+
+Tyhurst, James J. 2006.
+Services that reach from the inside out.
+Presented at Dr. Dobb's Architecture & Design World.
+Chicago, IL. July 17 - 20, 2006.
+
+## References
+
+Slides as a PDF document: [Jim_Tyhurst-Service_Gateways-20060719.pdf](./Jim_Tyhurst-Service_Gateways-20060719.pdf)

@@ -3,7 +3,7 @@ title: 'Internationalizing an R application for model parameters that vary per c
 description: 'This talk presents a coding idiom for internationalizing a function,
   where the output depends on the locale in which the sampling occurred.'
 date: '2017-06-03'
-categories: [R, design pattern]
+categories: [R, design patterns]
 format: html
 ---
 
