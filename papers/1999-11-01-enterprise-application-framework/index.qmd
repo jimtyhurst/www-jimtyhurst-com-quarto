@@ -1,0 +1,22 @@
+---
+title: "Business goals for developing an enterprise application integration framework"
+description: " "
+date: '1999-11-01'
+categories: [enterprise applications]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1999.
+Business goals for developing an enterprise application integration framework.
+Presented at the workshop,
+"Achieving bottom-line improvements with application and enterprise frameworks".
+1999 ACM SIGPLAN Conference on Object-Oriented Programming Systems,
+Languages, and Applications (OOPSLA '99).
+Denver, Colorado.
+November 1-5, 1999.
+
+## References
+
+Workshop announcement: [http://classic.sigplan.org/oopsla/oopsla99/2_ap/workshops/ws20.html](http://classic.sigplan.org/oopsla/oopsla99/2_ap/workshops/ws20.html)

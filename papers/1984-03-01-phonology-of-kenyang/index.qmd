@@ -1,0 +1,14 @@
+---
+title: 'Phonology of Kenyang'
+description: 'Analysis of Kenyang within the framework of structural phonology.'
+date: '1984-03-01'
+categories: [Kenyang, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1984.
+"Phonology of Kenyang".
+Yaoundé, Cameroun: Société Internationale de Linguistique.
+60 pp.

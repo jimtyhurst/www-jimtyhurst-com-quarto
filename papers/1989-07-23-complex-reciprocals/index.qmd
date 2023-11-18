@@ -1,0 +1,25 @@
+---
+title: 'Complex reciprocals in English'
+description: 'This presentation was based on early work that was later
+  discussed in more detail in
+  Chapter 5 "A semantic hierarchy of referentially dependent noun phrases"
+  of my dissertation.'
+date: '1989-07-23'
+categories: [semantics, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1989.
+"Complex reciprocals in English".
+Presented at the ASL/LSA Conference on Logic and Linguistics,
+University of Arizona, Tucson,
+July 23-24, 1989.
+
+## References
+
+This presentation was based on early work that was later
+discussed in more detail in
+Chapter 5 "A semantic hierarchy of referentially dependent noun phrases"
+of [my dissertation](../1990-Logical-Forms-for-English-Sentences/).

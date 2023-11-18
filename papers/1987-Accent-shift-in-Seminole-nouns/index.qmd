@@ -1,0 +1,14 @@
+---
+title: 'Accent shift in Seminole nouns'
+description: ' '
+date: '1989-12-29'
+categories: [linguistics]
+format: html
+---
+
+## Citation
+
+Tyhurst, James J. 1987.
+"Accent shift in Seminole nouns".
+In P. Munro (ed.), Muskogean Linguistics, UCLA Occasional Papers in Linguistics, No. 6.
+Los Angeles: University of California. pp. 161-170.

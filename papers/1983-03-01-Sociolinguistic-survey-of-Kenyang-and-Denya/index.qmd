@@ -1,0 +1,14 @@
+---
+title: 'Sociolinguistic survey of Kenyang and Denya'
+description: "Survey of speaker's attitudes about dialect differences."
+date: '1983-03-01'
+categories: [Kenyang, sociolinguistics, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst and Janis L. Tyhurst. 1983.
+"Sociolinguistic survey of Kenyang and Denya".
+Yaoundé, Cameroun: Société Internationale de Linguistique.
+43 pp.

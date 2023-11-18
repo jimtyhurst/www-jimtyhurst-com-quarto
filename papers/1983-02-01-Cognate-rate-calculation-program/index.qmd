@@ -1,0 +1,14 @@
+---
+title: "Cognate rate calculation program: COG User's Guide"
+description: 'User Guide for an application to calculate cognate rates for dialect surveys.'
+date: '1983-02-01'
+categories: [Kenyang, linguistics, tools]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1983.
+"Cognate rate calculation program: COG User's Guide".
+Yaoundé, Cameroun: Société Internationale de Linguistique.
+24 pp.

@@ -1,0 +1,21 @@
+---
+title: "Case study: Publishing design deliverables on the web"
+description: " "
+date: "1998-10-19"
+categories: [enterprise applications]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1998.
+Case study: Publishing design deliverables on the web.
+Presented at the workshop, "Web enactment of object-oriented software design".
+1998 ACM SIGPLAN Conference on Object-Oriented Programming Systems,
+Languages, and Applications (OOPSLA '98).
+Vancouver, British Columbia.
+October 18-22, 1998.
+
+## References
+
+Workshop announcement: [https://classic.sigplan.org/oopsla/oopsla98/ap/workshop/30.htm](https://classic.sigplan.org/oopsla/oopsla98/ap/workshop/30.htm)

@@ -1,0 +1,31 @@
+---
+title: 'Internationalizing an R application for model parameters that vary per country'
+description: 'This talk presents a coding idiom for internationalizing a function,
+  where the output depends on the locale in which the sampling occurred.'
+date: '2017-06-03'
+categories: [R, design patterns]
+format: html
+---
+
+## Citation
+
+Jim Tyhurst. 2017-06-03.
+Internationalizing an R application for model parameters that vary per country.
+Lightening talk presented at CascadiaRConf 2017, Portland, OR.
+June 3, 2017.
+
+## References
+
+Source: [https://github.com/jimtyhurst/i18nr](https://github.com/jimtyhurst/i18nr)
+
+Conference page: [https://cascadiarconf.com/years/2017/agenda/](https://cascadiarconf.com/years/2017/agenda/)
+
+## Abstract
+
+As an R developer, I sometimes need to parameterize functions, so that they
+can be re-used across different populations. One example is where model
+parameters vary across countries. This talk presents a coding idiom for
+internationalizing a function, where the output depends on the locale in
+which the sampling occurred. This idiom enables code reuse and enhances
+testability. I demonstrate the idiom with sample code from scoring an
+international student assessment.

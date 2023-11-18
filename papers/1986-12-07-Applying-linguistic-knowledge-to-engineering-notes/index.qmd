@@ -1,0 +1,23 @@
+---
+title: 'Applying linguistic knowledge to engineering notes'
+description: 'This paper describes an analysis of engineering notes
+  that led to development of a system for parsing those notes into
+  a format that is accessible to planning rules in an expert system.'
+date: '1989-12-29'
+categories: [linguistics, rule-based systems]
+format: html
+---
+
+## Citation
+
+Tyhurst, James J. 1986.
+"Applying linguistic knowledge to engineering notes".
+In S.C-Y. Lu and R. Komanduri (eds.),
+Knowledge-Based Expert Systems for Manufacturing (PED-Vol. 24).
+New York: The American Society of Mechanical Engineers.
+pp. 131-136.
+
+## References
+
+Proceedings indexed in:
+[OCLC WorldCat](https://www.worldcat.org/title/knowledge-based-expert-systems-for-manufacturing-presented-at-the-winter-annual-meeting-of-the-american-society-of-mechanical-engineers-anaheim-california-december-7-12-1986/oclc/15049609).

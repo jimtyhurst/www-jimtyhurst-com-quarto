@@ -18,7 +18,7 @@ website:
       - href: index.qmd
         text: Home
       - resume.qmd
-      - blog.qmd
+      - papers.qmd
     background: primary
   search: true
   twitter-card:

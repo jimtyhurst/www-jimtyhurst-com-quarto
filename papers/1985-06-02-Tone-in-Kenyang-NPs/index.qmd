@@ -1,0 +1,42 @@
+---
+title: 'Tone in Kenyang Noun Phrases'
+description: 'My M.A. Thesis analyzes Kenyang tone within the framework
+  of autosegmental phonology.'
+date: '1985-06-02'
+categories: [Kenyang, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1985.
+"Tone in Kenyang Noun Phrases".
+M.A. thesis at the University of California, Los Angeles.
+
+## References
+
+PDF document: [JimTyhurst-1985-Tone-in-Kenyang-noun-phrases-MA-Thesis.pdf](./JimTyhurst-1985-Tone-in-Kenyang-noun-phrases-MA-Thesis.pdf)
+
+Indexed in:
+[OLAC Language Resource Catalog](http://www.language-archives.org/language/ken):
+at: [http://www.language-archives.org/item/oai:sil.org:9539](http://www.language-archives.org/item/oai:sil.org:9539)
+
+## Abstract
+
+Kenyang nouns and noun phrases provide a restricted paradigm in which we
+can observe tome patterns and the interaction of various tonal
+processes. An autosegmental description of tone is presented in which
+noun roots carry tone melodies of three tone segments. The association
+of tones to tone-bearing units occurs by general convention. This
+accounts for the difference in distribution of surface tone patterns on
+two and three syllable nouns.
+
+Associative noun phrases are marked by a relatively complicated set of
+vowel deletion alternations. However, the reassociation of tones is
+seen to follow from a commonly observed principle and a specification
+of the domain for tone associations.
+
+A result of theoretical interest is that the Obligatory Contour
+Principle is nto a part of the phonology of Kenyang. Rejecting the
+Obligatory Contour Principle at both the lexical and phrasal levels
+leads to a much simpler description of tonal phenomena.

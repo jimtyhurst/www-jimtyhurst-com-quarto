@@ -1,0 +1,58 @@
+---
+title: 'Logical Forms for English Sentences'
+description: 'My Ph.D. dissertation investigates the relationship between syntactic structure and
+  semantic interpretation, in order to develop an explicit model of the mapping from
+  surface syntactic forms to a level of Logical Form (LF) and finally to truth values.'
+date: '1990-05-31'
+categories: [semantics, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1990.
+"Logical Forms for English Sentences".
+Ph.D. dissertation at the University of California, Los Angeles.
+
+## References
+
+PDF document: [JimTyhurst-1990-Dissertation-Logical_Forms.pdf](./JimTyhurst-1990-Dissertation-Logical_Forms.pdf)
+
+## Abstract
+
+This dissertation investigates the relationship between syntactic structure
+and semantic interpretation. The goal of this study is to develop an explicit
+model of the mapping from surface syntactic forms to a level of Logical Form
+(LF) and finally to truth values. The mapping from surface structure to LF is
+done within the framework of the Government and Binding (GB) theory of
+grammar. A computationally tractable interpretation algorithm is then given
+for mapping logical forms onto truth values within an extensional
+model-theoretic semantics.
+
+The interaction between quantifiers and Boolean operators is used as a
+diagnostic for the types of structures implicitly required for correct
+semantic interpretation of English sentences. Most current work on LF assumes
+that logical forms are ambiguous with regard to quantifier scope. However,
+two such analyses (May 1985, Aoun and Li 1989) are shown to give incorrect
+predictions of scope interactions when sentences with more than two
+quantifiers are considered. An alternative model within the GB framework is
+proposed in which surface structures are mapped onto unambiguous logical
+forms. In addition to providing a correct description of complex operator
+interactions, this approach has the advantage that entailment may be defined
+at the level of LF.
+
+The algorithm for interpreting logical forms is based on work in generalized
+quantifiers (Barwise and Cooper 1981, Keenan and Stavi 1986). There are two
+important results of this algorithm. First, an explicit interpretation is
+provided for verb phrase (VP) adjunction. Such structures have been assumed
+in the GB literature, although a method has never been given for interpreting
+them. Second, the use of generalized quantifiers allows one to provide a
+uniform interpretation for a wide range of determiners, including those which
+are not first-order definable (e.g. 'most') and those constructed from
+Boolean combinations of determiners (e.g. 'some but not all', 'at least six
+but not more than twelve').
+
+After considering generalized quantifiers, an analysis is given of
+referentially dependent noun phrases which inherently require a higher-order
+analysis. It is shown that these noun phrases may be grouped into four
+semantic classes which correlate with differences in syntactic distribution.

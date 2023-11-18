@@ -1,0 +1,21 @@
+---
+title: "Choosing transaction models for enterprise applications"
+description: " "
+date: "2001-10-14"
+categories: [design patterns, enterprise applications]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 2001.
+Choosing transaction models for enterprise applications.
+Presented at the workshop, "Three-Tier Architecture Pattern Language".
+2001 ACM Conference on Object-Oriented Programming Systems, Languages,
+and Applications (OOPSLA 2001).
+Tampa, Florida.
+October 14 - 18, 2001.
+
+## References
+
+Workshop announcement: [http://www.oopsla.org/2001/fp/workshops/23.html](http://www.oopsla.org/2001/fp/workshops/23.html)

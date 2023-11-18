@@ -1,0 +1,53 @@
+---
+title: 'A semantic characterization of referentially dependent noun phrases'
+description: 'This paper provides a model-theoretic semantic analysis of
+  referentially dependent noun phrases.'
+date: '1989-12-29'
+categories: [semantics, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst, 1989-12-29. "A semantic characterization of referentially
+dependent noun phrases".
+Presented at the
+[1989 Annual Meeting of the Linguistic Society of America](https://www.linguisticsociety.org/sites/default/files/Ling.%20Society%20of%20America%201989.pdf),
+Washington, DC,
+December 27-30, 1989.
+
+## Abstract
+
+Many syntactic and semantic studies have focused on the distribution of
+closed-class lexical NPs such as 'her', 'herself', and 'each other'. Recent
+work has demonstrated that many other NPs are also referentially dependent
+(Carlson 1987, Keenan 1987). In this paper, I provide a model-theoretic
+semantic analysis of a number of referentially dependent NPs, including those
+below:
+
+1. Bob and Chris read _a total of nine plays_.
+2. Alice's friends had _two hobbies in common_.
+3. Three students read _the same books_.
+4. Every student read _a different book_.
+5. Ashu's parents speak _related dialects of Denya_.
+6. No students saw _each other's scores_.
+
+These NP are interpreted as functions which map two-place relations onto sets
+of properties. This analysis leads to two new and interesting results.
+
+First, NPs may be
+classified according to their degree of dependency as specified by six
+semantic conditions on higher-order functions. This classification shows that
+English NPs cluster at points along an anaphor "squish", in the sense of
+Ross (1972).
+
+Second, distinctions made by these semantic conditions correlate with
+differences in syntactic distribution. For example, Strong and Weak Crossover
+effects are shown to generalize from bound variable pronouns to certain other
+classes of referentially dependent NPs. Unlike pronouns, these higher-order
+NPs appear to discriminate between crossover environments at S-structure and
+LF, as exemplified below:
+```
+    * Which students did the same professor fail?
+    The same professor failed at least three students.
+```

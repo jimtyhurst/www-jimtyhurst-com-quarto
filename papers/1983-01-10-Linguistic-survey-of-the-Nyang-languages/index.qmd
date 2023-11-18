@@ -1,0 +1,14 @@
+---
+title: 'Linguistic survey of the Nyang languages'
+description: 'Dialect survey of Kenyang, Denya, and Kitwii.'
+date: '1983-01-10'
+categories: [Kenyang, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1983.
+"Linguistic survey of the Nyang languages".
+Yaoundé, Cameroun: Société Internationale de Linguistique.
+80 pp.

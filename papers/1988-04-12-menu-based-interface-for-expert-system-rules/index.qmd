@@ -1,0 +1,39 @@
+---
+title: A menu-based interface for expert system rules
+description: 'We describe the Syntax-driven Menu-based Interfaces for
+  Lex and Yacc grammars (SMILY) system, which is a tool for generating
+  menu-based interfaces for context-free grammars.'
+date: '1988-04-12'
+categories: [rule-based systems, tools]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst and Kerry L. Glover. 1988.
+"A menu-based interface for expert system rules".
+In Proceedings of the 2nd Annual Expert Systems Conference
+and Exposition (April 12-14, 1988).
+Detroit: Engineering Society of Detroit. pp. 203-210.
+
+## References
+
+PDF document: [JimTyhurst-KerryGlover-1988-Menu-based-interface-for-expert-system-rules.pdf](./JimTyhurst-KerryGlover-1988-Menu-based-interface-for-expert-system-rules.pdf)
+
+Proceedings indexed in:
+[OCLC WorldCat](http://www.worldcat.org/title/2nd-annual-expert-systems-conference-and-exposition-selected-papers-april-12-14-1988-cobo-hall-detroit-michigan/oclc/78781853).
+
+## Abstract
+
+The Syntax-driven Menu-based Interfaces for Lex and Yacc grammars
+(SMILY) system is a tool for generating menu-based interfaces for
+context-free grammars. We present the interface which has been developed for
+the HICLASS^TM^ Software System as a sample output of the SMILY interface
+generator. This particular interface helps users to write an expert system
+rule by prompting them with menus that contain all and only the valid options
+at each point in the creation of the rule. Thus, users are constantly aware
+of the available options and they are guided in writing a syntactically
+correct rule. The SMILY system provides important functional improvements
+over previous menu-based systems for context-free natural language input.
+SMILY continues to provide menus through all stages of editing a rule and it
+can handle an arbitrary LALR(1) context-free grammar.

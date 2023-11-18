@@ -1,0 +1,16 @@
+---
+title: 'Lexical and phrasal tone patterns: evidence against the Obligatory Contour Principle'
+description: 'This paper discusses tone patterns in Kenyang nouns
+  that appear to violate the Obligatory Contour Principle.'
+date: '1986-04-03'
+categories: [Kenyang, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1986.
+"Lexical and phrasal tone patterns: evidence against the Obligatory Contour Principle".
+Presented at the 17th African Linguistics Conference,
+Indiana University,
+April 3-5, 1986.
