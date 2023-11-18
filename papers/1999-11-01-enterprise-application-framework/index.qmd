@@ -2,7 +2,7 @@
 title: "Business goals for developing an enterprise application integration framework"
 description: " "
 date: '1999-11-01'
-categories: [design patterns, enterprise applications]
+categories: [enterprise applications]
 format: html
 ---
 

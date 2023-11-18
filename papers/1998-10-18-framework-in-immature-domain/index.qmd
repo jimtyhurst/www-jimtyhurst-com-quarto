@@ -1,0 +1,22 @@
+---
+title: 'The risks of developing a framework in an immature domain'
+description: ' '
+date: '1998-10-18'
+categories: [enterprise applications]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1998.
+The risks of developing a framework in an immature domain.
+Presented at the workshop,
+"Pragmatic issues in using frameworks: Implications for framework design".
+1998 ACM SIGPLAN Conference on Object-Oriented Programming Systems,
+Languages, and Applications (OOPSLA '98).
+Vancouver, British Columbia.
+October 18 - 22, 1998.
+
+## References
+
+Workshop announcement: [https://classic.sigplan.org/oopsla/oopsla98/ap/workshop/12.htm](https://classic.sigplan.org/oopsla/oopsla98/ap/workshop/12.htm)
