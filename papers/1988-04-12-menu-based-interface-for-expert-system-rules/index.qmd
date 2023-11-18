@@ -28,7 +28,7 @@ Proceedings indexed in:
 The Syntax-driven Menu-based Interfaces for Lex and Yacc grammars
 (SMILY) system is a tool for generating menu-based interfaces for
 context-free grammars. We present the interface which has been developed for
-the HICLASS Software System as a sample output of the SMILY interface
+the HICLASS^TM^ Software System as a sample output of the SMILY interface
 generator. This particular interface helps users to write an expert system
 rule by prompting them with menus that contain all and only the valid options
 at each point in the creation of the rule. Thus, users are constantly aware

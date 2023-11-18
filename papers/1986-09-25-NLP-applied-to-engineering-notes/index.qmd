@@ -1,0 +1,37 @@
+---
+title: 'Natural language processing applied to engineering notes'
+description: 'This paper discusses  a software package that converts
+  engineering notes into a frame/slot representation for use by a
+  process planning expert system.'
+date: '1989-12-29'
+categories: [linguistics, rule-based systems]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst 1986.
+"Natural language processing applied to engineering notes".
+Ultratech Artificial Intelligence Conference Proceedings (Vol. 1),
+Long Beach, California.
+pp. 2-199 to 2-211.
+
+## References
+
+PDF document: [JimTyhurst-1986-NLP-applied-to-engineering-notes.pdf](./JimTyhurst-1986-NLP-applied-to-engineering-notes.pdf)
+
+Proceedings indexed in:
+[OCLC WorldCat](https://www.worldcat.org/title/ultratech-conference-proceedings-september-22-25-1986-long-beach-california/oclc/978130176&referer=brief_results).
+
+## Abstract
+
+Engineering notes are placed on design drawings in order to convey
+requirements or instructions to the manufacturing organization.
+Therefore, process planning expert systems must interpret these notes
+which are written in a technical form of English. This paper discusses
+a software package which converts standardized notes into a frame/slot
+representation. This representation is used by the HICLASS^TM^ Software
+System, an automated process planning expert system. Standardized notes
+are restricted to the fixed subset of English commonly used on design
+drawings. Standardization provides a mechanism for conveying
+manufacturing producibility feedback early in the design cycle.
