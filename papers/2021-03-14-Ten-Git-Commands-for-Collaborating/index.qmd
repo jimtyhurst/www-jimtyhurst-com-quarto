@@ -6,6 +6,11 @@ categories: [software engineering, collaboration, tools]
 format: html
 ---
 
+Jim Tyhurst. 2021-03-14.
+10 Git commands for collaborating:
+Learn just enough Git and GitHub to contribute to an Open Source project.
+[https://github.com/jimtyhurst/git-10-commands](https://github.com/jimtyhurst/git-10-commands)
+
 This is a short tutorial to learn just enough [Git](https://git-scm.com/)
 and [GitHub](https://github.com/) to contribute to
 an open source project with confidence. I explain how you only need to learn

@@ -7,7 +7,7 @@ categories: [natural language generation, radiology]
 format: html
 ---
 
-Berman, Gerald D., Richard N. Gray, David Liu, and James J. Tyhurst.
+Gerald D. Berman, Richard N. Gray, David Liu, and James J. Tyhurst.
 2001.
 "Structured radiology reporting: A 4 year case study of 160,000 reports".
 Presented at the Integrating the Healthcare Enterprise (IHE) Symposium of the

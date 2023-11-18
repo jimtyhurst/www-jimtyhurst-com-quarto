@@ -8,7 +8,7 @@ categories: [semantics, linguistics]
 format: html
 ---
 
-Tyhurst, James J. 1990.
+Jim Tyhurst. 1990.
 "Logical Forms for English Sentences".
 Ph.D. dissertation at the University of California, Los Angeles.
 
