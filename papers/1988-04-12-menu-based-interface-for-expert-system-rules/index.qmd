@@ -4,7 +4,7 @@ description: 'We describe the Syntax-driven Menu-based Interfaces for
   Lex and Yacc grammars (SMILY) system, which is a tool for generating
   menu-based interfaces for context-free grammars.'
 date: '1988-04-12'
-categories: [expert system, tools]
+categories: [rule-based systems, tools]
 format: html
 ---
 

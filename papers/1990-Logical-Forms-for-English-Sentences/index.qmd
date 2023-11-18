@@ -1,6 +1,6 @@
 ---
 title: 'Logical Forms for English Sentences'
-description: 'This Ph.D. dissertation investigates the relationship between syntactic structure and
+description: 'My Ph.D. dissertation investigates the relationship between syntactic structure and
   semantic interpretation, in order to develop an explicit model of the mapping from
   surface syntactic forms to a level of Logical Form (LF) and finally to truth values.'
 date: '1990-05-31'

@@ -1,0 +1,26 @@
+---
+title: 'Design considerations for applications that use domain-specific languages'
+description: 'This paper discusses a few design problems that one encounters while
+  developing a business application that uses an independent
+  representation of business rules.'
+date: '2002-11-04'
+categories: [rule-based systems]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 2002.
+Design considerations for applications that use domain-specific languages.
+Presented at the workshop,
+"Using Domain Specific Languages to Drive Business Applications".
+Association for Computing Machinery's Conference on
+Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA 2002).
+Seattle, WA. Nov. 4-8, 2002.
+
+## References
+
+PDF document: [DSLs-OOPSLA-2002-JTyhurst.pdf](./DSLs-OOPSLA-2002-JTyhurst.pdf)
+
+Workshop announcement:
+[Using Domain Specific Languages to Drive Business Applications](http://www.oopsla.org/2002/fp/files/wor-26.html)

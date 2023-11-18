@@ -3,7 +3,7 @@ title: 'Structured radiology reporting: A 4 year case study of 160,000 reports'
 description: 'This paper analyzes the use of structured radiology reports,
   including the ability to produce natural English sentences from structured input.'
 date: '2001-11-25'
-categories: [natural language generation, radiology, expert system]
+categories: [natural language generation, rule-based systems]
 format: html
 ---
 
