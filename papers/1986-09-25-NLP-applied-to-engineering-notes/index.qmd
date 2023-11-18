@@ -4,7 +4,7 @@ description: 'This paper discusses  a software package that converts
   engineering notes into a frame/slot representation for use by a
   process planning expert system.'
 date: '1989-12-29'
-categories: [linguistics, rule-based systems]
+categories: [linguistics, rule-based systems, enterprise applications]
 format: html
 ---
 

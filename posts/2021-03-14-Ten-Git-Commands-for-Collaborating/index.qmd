@@ -2,7 +2,7 @@
 title: 10 Git Commands for Collaborating
 description: Learn just enough Git and GitHub to contribute to an Open Source project.
 date: '2021-03-14'
-categories: [software engineering, collaboration, tools]
+categories: [software engineering, collaboration, tools, enterprise applications]
 format: html
 ---
 
