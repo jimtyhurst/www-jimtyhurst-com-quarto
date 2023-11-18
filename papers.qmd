@@ -1,5 +1,5 @@
 ---
-title: "Papers and Presentations"
+title: "Papers"
 listing:
   contents: papers
   sort: "date desc"

@@ -1,11 +1,13 @@
 ---
 title: 'Structured radiology reporting: A 4 year case study of 160,000 reports'
-description: This paper analyzes the use of structured radiology reports,
-  including the ability to produce natural English sentences from structured input.
+description: 'This paper analyzes the use of structured radiology reports,
+  including the ability to produce natural English sentences from structured input.'
 date: '2001-11-25'
-categories: [natural language generation, radiology]
+categories: [natural language generation, radiology, expert system]
 format: html
 ---
+
+## Citation
 
 Gerald D. Berman, Richard N. Gray, David Liu, and James J. Tyhurst.
 2001.
@@ -13,6 +15,8 @@ Gerald D. Berman, Richard N. Gray, David Liu, and James J. Tyhurst.
 Presented at the Integrating the Healthcare Enterprise (IHE) Symposium of the
 Radiological Society of North America (RSNA) 2001 Annual Meeting,
 November 25 - 30, 2001.
+
+## References
 
 PDF document: [structurad-rsna-2001.pdf](./structurad-rsna-2001.pdf)
 

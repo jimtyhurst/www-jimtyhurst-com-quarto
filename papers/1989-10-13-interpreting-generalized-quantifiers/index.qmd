@@ -1,0 +1,23 @@
+---
+title: 'Interpreting generalized quantifiers in natural language'
+description: 'This presentation was based on an early work that was later
+  discussed in more detail in Chapter 4 of my dissertation.'
+date: '1989-10-13'
+categories: [semantics, linguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1989.
+"Interpreting generalized quantifiers in natural language".
+Presented at the 15th Annual Minnesota Conference on Language and Linguistics,
+Minneapolis, Minnesota,
+October 13-14, 1989.
+
+## References
+
+This presentation was based on early work that was later
+discussed in more detail in
+Chapter 4 "Interpreting logical forms"
+of [my dissertation](../1990-Logical-Forms-for-English-Sentences/).

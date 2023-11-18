@@ -1,20 +1,18 @@
 ---
-title: 10 Git Commands for Collaborating
-description: Learn just enough Git and GitHub to contribute to an Open Source project.
+title: '10 Git Commands for Collaborating'
+description: 'Learn just enough Git and GitHub to contribute to an Open Source project.'
 date: '2021-03-14'
 categories: [software engineering, collaboration, tools]
 format: html
 ---
 
+## Citation
+
 Jim Tyhurst. 2021-03-14.
 10 Git commands for collaborating:
 Learn just enough Git and GitHub to contribute to an Open Source project.
-[https://github.com/jimtyhurst/git-10-commands](https://github.com/jimtyhurst/git-10-commands)
 
-This is a short tutorial to learn just enough [Git](https://git-scm.com/)
-and [GitHub](https://github.com/) to contribute to
-an open source project with confidence. I explain how you only need to learn
-10 commands and a few workflows, in order to use Git to collaborate with others.
+## References
 
 PDF document: [https://github.com/jimtyhurst/git-10-commands/blob/main/10-Git-Commands-for-Collaborating.pdf](https://github.com/jimtyhurst/git-10-commands/blob/main/10-Git-Commands-for-Collaborating.pdf)
 
@@ -24,3 +22,10 @@ Presented at [Portland R User Group](https://www.meetup.com/portland-r-user-grou
 Portland, Oregon on 2021-02-23.
 
 YouTube recording: [https://www.youtube.com/watch?v=2cEGTShuHuo](https://www.youtube.com/watch?v=2cEGTShuHuo)
+
+## Abstract
+
+This is a short tutorial to learn just enough [Git](https://git-scm.com/)
+and [GitHub](https://github.com/) to contribute to
+an open source project with confidence. I explain how you only need to learn
+10 commands and a few workflows, in order to use Git to collaborate with others.

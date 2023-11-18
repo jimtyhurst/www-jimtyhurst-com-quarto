@@ -1,0 +1,48 @@
+---
+title: 'Cultural identity perceived as linguistic identity: Results from a survey of the Nyang languages'
+description: 'This paper presents the results of a language survey
+  among the Nyang languages of western Cameroon, demonstrating that
+  linguistic and sociolinguistic surveys are both required to identify
+  dialects for literacy development programs.'
+date: '1989-04-15'
+categories: [Kenyang, linguistics, sociolinguistics]
+format: html
+---
+
+## Citation
+
+James J. Tyhurst. 1988.
+"Cultural identity perceived as linguistic identity: Results from a survey of the Nyang languages".
+Presented at the
+[19th Annual African Linguistics Conference](./JimTyhurst-1988-Cultural-identity-perceived-as-linguistic-identity-Abstract.pdf),
+Boston University,
+April 14-17, 1988.
+
+## Abstract
+
+Linguistic and sociolinguistic data are both needed for surveys whose purpose
+is to identify the different dialect and language groups of a particular
+geographical region. This paper presents the results of a language survey
+among the Nyang languages of western Cameroon. The survey consisted of two
+questionnaires. A linguistic questionnaire tested for pronunciation
+differences and lexical differences between dialects and languages. A
+sociolinguistic questionnaire sampled speakers' opinions about dialect and
+language boundaries. The results of the survey exhibit two ways in which
+speakers' perceptions of what constitutes a speech community may differ from
+a linguist's analysis of purely linguistic data. In one situation, speakers
+claimed to be part of separate language groups, even though the linguistic
+differences were quite minor and even though they agreed that
+intercomprehension was possible. Conversely, another pair of groups claimed
+linguistic unity, whereas the linguistic data indicated significant dialect
+differences (e.g. different noun class prefixes). There are several practical
+consequences of these results. First, due to the problem of sampling every
+village in a particular region, linguistic surveys often resort to the
+(sociolinguistic) question, "Which other villages speak the way that you do?"
+The results of the Nyang survey show that the answer to this question may not
+provide the information that the linguist is seeking. Second, the survey
+demonstrates that both the linguist's and the speaker's view of the
+linguistic community must be considered in order to provide a solid basis for
+language development programs. The choice of a reference dialect and the
+extent to which literature will be accepted in a community depends both on
+linguistic factors of intercomprehension and on sociolinguistic attitudes
+about speech communities.

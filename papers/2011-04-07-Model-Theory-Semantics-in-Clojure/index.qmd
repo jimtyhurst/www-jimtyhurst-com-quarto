@@ -1,14 +1,18 @@
 ---
-title: Model-Theory Semantics implemented in Clojure
-description: Lightning talk presented at Lambda Lounge user group. St. Louis, MO. April 7, 2011.
+title: 'Model-Theory Semantics implemented in Clojure'
+description: 'Lightning talk presented at Lambda Lounge user group. St. Louis, MO. April 7, 2011.'
 date: '2011-04-07'
-categories: [linguistics, semantics, Clojure]
+categories: [semantics, Clojure, linguistics]
 format: html
 ---
+
+## Citation
 
 Jim Tyhurst. 2011-04-07. Model-Theory Semantics implemented in Clojure.
 Lightning Talk at the Lambda Lounge user group, St. Louis, MO.
 April 7, 2011
+
+## References
 
 Slides: [JimTyhurst-ModelTheorySemantics-20110407.pdf](./JimTyhurst-ModelTheorySemantics-20110407.pdf)
 

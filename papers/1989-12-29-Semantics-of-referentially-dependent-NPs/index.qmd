@@ -1,11 +1,13 @@
 ---
-title: A semantic characterization of referentially dependent noun phrases
-description: This paper provides a model-theoretic semantic analysis of
-  referentially dependent noun phrases.
+title: 'A semantic characterization of referentially dependent noun phrases'
+description: 'This paper provides a model-theoretic semantic analysis of
+  referentially dependent noun phrases.'
 date: '1989-12-29'
 categories: [semantics, linguistics]
 format: html
 ---
+
+## Citation
 
 James J. Tyhurst, 1989-12-29. "A semantic characterization of referentially
 dependent noun phrases".
