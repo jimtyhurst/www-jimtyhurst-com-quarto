@@ -5,7 +5,7 @@ description: 'This paper presents the results of a language survey
   linguistic and sociolinguistic surveys are both required to identify
   dialects for literacy development programs.'
 date: '1989-04-15'
-categories: [Kenyang, linguistics, sociolinguistics]
+categories: [Kenyang, sociolinguistics, linguistics]
 format: html
 ---
 
