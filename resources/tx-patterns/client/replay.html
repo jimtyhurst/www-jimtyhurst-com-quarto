@@ -1,0 +1,124 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Replay Changes</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Replay Changes</H3>
+<H4>Problem</H4>
+<P>
+  How can a client application preserve a user's changes after aborting
+  a transaction?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that commits
+  transactions on an application server. There are several reasons why you might
+  want to be able to replay a user's business transaction after aborting
+  a server transaction:
+</P>
+<UL>
+  <LI><P>
+    If a transaction fails, you need to abort the transaction to get a clean view
+    of the repository. However, rather than losing the user's changes, you would
+    like to be able to attempt the transaction again.
+  </P></LI>
+  <LI><P>
+    For long business transactions, it may be desirable to change persistent
+    objects while outside of a server transaction. However, changes to persistent
+    objects can only be saved in the repository while in a transaction.
+    Therefore, you might want to allow the user to modify an object outside
+    of a transaction, then replay the changes inside of a transaction.
+  </P></LI>
+</UL>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/commitFailure.html">Failure to commit</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/writeConflict.html">Write-Write conflicts</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/conflictProbability.html">Probability of a commit failure</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/length.html">Length of transaction</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/dataCurrency.html">Data currency</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/noModOutsideTx.html">Objects cannot be modified outside of a transaction</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/sigAbort.html">Signal to abort</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/unitsOfWork.html">Multiple units of work</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  The client keeps the changes independent from the view of the repository,
+  so that when a view is refreshed, the changes may be replayed.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  In order to be able to replay changes, you need to be able to identify
+  the changes that were made as part of the current business transaction,
+  as explained in the
+  <A href="./txSpec.html">Transaction Specification</A>
+  pattern.
+</P>
+<P>
+  Two different strategies for replaying changes are described in:
+</P>
+<UL>
+  <LI><P>
+    <A href="../conflict/lastWins.html">Last Commit Wins</A>
+  </P></LI>
+  <LI><P>
+    <A href="../conflict/mergeUpdates.html">Merge Conflicting Updates</A>
+  </P></LI>
+</UL>
+<H4>Rationale</H4>
+<P>
+  There are two benefits to this solution:
+</P>
+<OL>
+  <LI><P>
+    Changes to persistent objects can be made outside of a server transaction,
+    which allows you to implement long business transactions with short
+    server transactions.
+  </P></LI>
+  <LI><P>
+    You do not lose a user's changes when a commit failure occurs.
+  </P></LI>
+</OL>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./txSpec.html">Transaction Specification</A>
+    provides a record of changes, so that they can be replayed.
+  </P></LI>
+  <LI><P>
+    <A href="./aspectChange.html">Aspect Change Specification</A>
+    is a way to record user-initiated changes to domain objects which must
+    be replayed.
+  </P></LI>
+  <LI><P>
+    <A href="./dirtyPool.html">Dirty Object Pool</A>
+    is another way to record changes to domain objects, so that the changes
+    can be copied into a new transaction.
+  </P></LI>
+  <LI><P>
+    <A href="../conflict/lastWins.html">Last Commit Wins</A>
+    and
+    <A href="../conflict/mergeUpdates.html">Merge Conflicting Updates</A>
+    provide specific strategies for replaying changes.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

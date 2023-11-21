@@ -1,0 +1,17 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Signal to abort</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Signal to abort</H3>
+<P>
+  When the client is working outside of a transaction while maintaining
+  a session on an application server, the server may
+  signal the client to abort (i.e. refresh its view of the repository).
+  In response, the client should abort, in order to refresh the current
+  view. This allows the application server to reclaim obsolete objects.
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>Chained Transaction</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h3>Chained Transaction</h3>
+<h4>Problem</h4>
+<p>
+  How can a client application organize a set of domain model changes
+  to be submitted in a series of transactions while holding locks across
+  transaction boundaries?
+</p>
+<h4>Context</h4>
+<p>
+  You are developing a client application that commits a series of transactions on an
+  application server for a single business transaction. An object
+  is to be updated in more than one of these transactions.
+</p>
+<h4>Forces</h4>
+<ul>
+  <li><p>
+    <a href="../forces/writeConflict.html">Write-write conflict</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/length.html">Length of transaction</a>.
+  </p></li>
+</ul>
+<h4>Solution</h4>
+<p>
+  Commit the work of a
+  <a href="./flat.html">Flat Transaction</a>
+  and then remain in a transaction, while holding previous locks.
+</p>
+<h4>Resulting Context</h4>
+<p>
+  Each transaction in the chain is treated as a
+  <a href="./flat.html">Flat Transaction</a>.
+  However, this solution has the added complexity that you need to
+  specify the scope for obtaining and releasing a
+  <a href="../client/lock.html">write lock</a>.
+</p>
+<h4>Rationale</h4>
+<p>
+  This model provides a way increase the probability of being able to
+  commit a series of changes to an object, even if those changes are
+  performed in separate transactions.
+</p>
+<h4>Related Patterns</h4>
+<p>
+  For other solutions to this same problem, see the list of patterns for
+  <a href="./index.html">selecting a transaction model</a>.
+</p>
+</body>
+</html>

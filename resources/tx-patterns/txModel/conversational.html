@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <title>Conversational Transaction</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h3>Conversational Transaction</h3>
+<h4>Problem</h4>
+<p>
+  How can a client application organize a set of domain model changes
+  to be submitted in a transaction where the user needs a relatively
+  long time to specify the changes, but the server prefers short
+  transactions?
+</p>
+<h4>Context</h4>
+<p>
+  You are developing a user interface for a multi-user application that
+  commits transactions on an application server. People using the system
+  perform business transactions that typically take a few minutes,
+  but which may remain open for an arbitrarily long time (e.g. the user
+  opens a customer screen and then goes to lunch before saving the data
+  that has been entered).
+</p>
+<h4>Forces</h4>
+<ul>
+  <li><p>
+    <a href="../forces/length.html">Length of transaction</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/noModOutsideTx.html">Objects cannot be modified outside
+      of a transaction</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/sigAbort.html">Signal to abort</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/txMode.html">Transaction modes supported by the application server</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/commitFailure.html">Failure to commit</a>.
+  </p></li>
+</ul>
+<h4>Solution</h4>
+<p>
+  Let the user perform the business transaction outside of a server transaction.
+  At the completion of the business transaction, open a server transaction,
+  apply the accumulated changes, and commit the transaction.
+  The client performs the following steps:
+</p>
+<ol>
+  <li>Begin a transaction, read some data, and abort the transaction.</li>
+  <li>Process the data outside of a transaction.</li>
+  <li>Begin a transaction, apply the updates, and commit the transaction.</li>
+</ol>
+<h4>Resulting Context</h4>
+<p>
+  In order to apply this pattern, one must have a way of saving changes that
+  are made outside of a transaction, so that they can be reapplied inside of
+  a transaction. The
+  <a href="../client/replay.html">Replay Changes</a>
+  pattern provides a solution to this problem.
+</p>
+<p>
+  For long business transactions where objects must be locked for an extended period
+  of time, the
+  <a href="../client/checkOut.html">Check Out Objects</a>
+  pattern provides a way to lock objects while minimizing the use of server
+  resources.
+</p>
+<h4>Rationale</h4>
+<p>
+  One of the advantages of this solution is that it provides a way to handle long
+  business transactions with a server that prefers short transactions.
+  By using short server transactions, the application reduces the resource
+  requirements placed on the server, resulting in better performance.
+</p>
+<h4>Related Patterns</h4>
+<ul>
+  <li><p>
+    For other solutions to this same problem, see the list of patterns for
+    <a href="./index.html">selecting a transaction model</a>.
+  </p></li>
+  <li><p>
+    <a href="../client/replay.html">Replay Changes</a>
+    provides a way of saving
+    changes that are made outside of a transaction, so that they can be
+    reapplied inside of a transaction.
+  </p></li>
+  <li><p>
+    <a href="../client/checkOut.html">Check Out Objects</a>
+    provides a way to lock
+    objects for an extended period of time while minimizing the use of server
+    resources.
+  </p></li>
+</ul>
+</body>
+</html>

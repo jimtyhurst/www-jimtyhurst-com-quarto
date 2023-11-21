@@ -1,0 +1,92 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Dirty Object Pool</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Dirty Object Pool</H3>
+<H4>Problem</H4>
+<P>
+  How can a client application record a change to a domain model object
+  independently from that object?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a client application and you want to record changes
+  to server objects in a
+  <A href="./txSpec.html">transaction specification</A>,
+  so that the changes can be preserved across transaction boundaries.
+  For example, you might want to
+  <A href="./replay.html">replay changes</A>
+  after aborting a transaction.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/noModOutsideTx.html">Objects cannot be modified outside
+      of a transaction</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/unitsOfWork.html">Multiple units of work</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  Keep a copy of the object in its changed state, where the copy is local to
+  the client and is unaffected by transaction boundaries in the application
+  server.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  As a result of adopting this solution, the client application is able to
+  <A href="./replay.html">replay changes</A>
+  across transaction boundaries. Therefore after an abort, data from the non-persistent
+  copies of domain objects can be copied into persistent domain objects
+  within a transaction,
+  in order to redo the desired changes. This solution also supports a
+  <A href="../txModel/conversational.html">conversational</A>
+  transaction model in which the change specification is built outside of a
+  transaction and then replayed inside of a transaction to cause the changes
+  to be persistent.
+</P>
+<H4>Rationale</H4>
+<P>
+  There are several advantages to this solution:
+</P>
+<OL>
+  <LI><P>
+    Changes to persistent objects can be made outside of a server transaction,
+    which allows you to implement long business transactions with short
+    server transactions.
+  </P></LI>
+  <LI><P>
+    You do not lose a user's changes when a commit failure occurs.
+  </P></LI>
+</OL>
+<P>
+  Compared to the
+  <A href="./aspectChange.html">Aspect Change Specification</A>
+  pattern, this solution requires quite a bit of overhead, because copies
+  of the persistent object graph must be maintained in non-persistent
+  objects outside of the view of the repository. It is easy to maintain
+  a copy of a single object, but for an entire graph, the references between
+  objects must also be maintained.
+</P>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./aspectChange.html">Aspect Change Specification</A>
+    is an alternative to this <EM>Dirty Object Pool</EM> solution.
+    It is another way to record a specification of changes to domain objects,
+    so that changes can be replayed in a new transaction.
+  </P></LI>
+  <LI><P>
+    <A href="../conflict/lastWins.html">Last Commit Wins</A>
+    and
+    <A href="../conflict/mergeUpdates.html">Merge Conflicting Updates</A>
+    provide specific strategies for replaying changes.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

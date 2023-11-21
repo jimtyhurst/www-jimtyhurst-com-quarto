@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <title>Selecting a transaction model</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h2>Selecting a transaction model</h2>
+<table>
+  <tr>
+    <th>Pattern Name</th>
+    <th>Problem</th>
+    <th>Solution</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./flat.html">Flat Transaction</a>
+    </td>
+    <td>
+      How can a client application organize a set of domain model changes to be
+      submitted in a transaction that is easy to implement?
+    </td>
+    <td>
+      Group all of the changes in a single transaction that has no internal structure.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./chained.html">Chained Transaction</a>
+    </td>
+    <td>
+      How can a client application organize a set of domain model changes
+      to be submitted in a series of transactions while holding locks across
+      transaction boundaries?
+    </td>
+    <td>
+      Commit the work of a
+      Flat Transaction
+      and then remain in a transaction, while holding previous locks.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./conversational.html">Conversational Transaction</a>
+    </td>
+    <td>
+      How can a client application organize a set of domain model changes
+      to be submitted in a transaction where the user needs a relatively
+      long time to specify the changes, but the server prefers short
+      transactions?
+    </td>
+    <td>
+      Perform one transaction to read data, process the data offline,
+      and then submit the changes in a new transaction.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Queued Transaction
+    </td>
+    <td>
+      How can a client application organize a set of domain model changes
+      to be submitted in a transaction where there are many clients
+      adding new independent data?
+    </td>
+    <td>
+      Specify the actions to be performed in a transaction and submit
+      that specification into the queue of a transaction processor.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Nested Transaction
+    </td>
+    <td>
+      How can a client application organize a set of domain model changes
+      to be submitted in a transaction where the changes are organized
+      in hierarchical increments?
+    </td>
+    <td>
+      Provide a nested structure of transactions, so that each
+      embedded transaction can be rolled back without affecting higher
+      level transactions.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Distributed Transaction
+    </td>
+    <td>
+      How can a client application organize a set of domain model changes
+      to be submitted in a transaction where the domain model
+      is distributed across more than one server?
+    </td>
+    <td>
+      Provide a two-phase commit process, where each server verifies
+      that it can commit its portion of the transaction before any
+      server performs its portion of the commit.
+    </td>
+  </tr>
+</table>
+</body>
+</html>

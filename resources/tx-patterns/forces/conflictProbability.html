@@ -1,0 +1,24 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Probability of a commit failure</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Probability of a commit failure</H3>
+<P>
+  Your motivation to design and implement a solution for a
+  <A href="./commitFailure.html">failure to commit</A>
+  depends on the probability of a failure occurring in your particular
+  application. If the likelihood of a
+  <A href="./writeConflict.html">write-write conflict</A>
+  is very very small, then it may be acceptable to simply display an error
+  message to the user, abort the transaction, and force the user to
+  begin the business transaction again.
+  On the other hand, when losing the user's changes is an unacceptable
+  solution, especially when it may occur relatively frequently, you
+  will want to provide a solution to recover from a
+  <A href="./commitFailure.html">failure to commit</A>.
+</P>
+</BODY>
+</HTML>

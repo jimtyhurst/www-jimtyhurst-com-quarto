@@ -1,0 +1,16 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Objects cannot be modified outside of a transaction</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Objects cannot be modified outside of a transaction</H3>
+<P>
+  Changes made to persistent objects while outside of a transaction
+  cannot be committed. In order to change persistent objects,
+  the application must begin a new transaction, make changes to the
+  objects, and then commit the transaction.
+</P>
+</BODY>
+</HTML>

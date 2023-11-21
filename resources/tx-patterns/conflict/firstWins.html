@@ -1,0 +1,86 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>First Commit Wins</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>First Commit Wins</H3>
+<H4>Problem</H4>
+<P>
+  How can you serialize a set of changes from overlapping business
+  transactions that affect the same object when your primary concern
+  is for users to see changes immediately as they occur?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that
+  commits transactions on an application server.
+  Two or more transactions may overlap while trying to update the same
+  object. It is essential that users are aware of each other's
+  changes to busines objects.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/commitFailure.html">Failure to commit</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/writeConflict.html">Write-Write conflict</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/conflictProbability.html">Probability of a commit failure</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/dataCurrency.html">Data currency</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  A transactional application server allows the first server transaction
+  to "win" in the sense that successive transactions having a
+  <A href="../forces/writeConflict.html">write-write conflict</A>
+  will fail. Whenever a client application experiences a commit failure,
+  abort the transaction, and refresh the user's view from the current state
+  of the server. This will cause the user to lose all of their changes,
+  forcing them to start a new business transaction.
+  They will need to reevaluate the new data manually in order to decide whether
+  to redo their changes or not.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  Changes from other transactions can only be introduced at transaction
+  boundaries, so the amount of work affected by updating a view will depend
+  on the
+  <A href="../txModel/index.html">transaction model</A>
+  that has been chosen.
+</P>
+<P>
+  Since there is no attempt to preserve the user's changes that cause the
+  conflict, it is not necessary to
+  <A href="../client/index.html">represent the user's changes</A>
+  independently of the view.
+</P>
+<H4>Rationale</H4>
+<P>
+  This is a very easy pattern to implement. While it sounds terrible to cause the
+  end user to redo their work, this may be acceptable when the
+  <A href="../forces/conflictProbability.html">probability of a commit failure</A>
+  is so low that it can be ignored.
+</P>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./mergeUpdates.html">Merge Conflicting Updates</A>
+    provides a different solution to this problem by allowing the replay
+    of changes in the last transaction to selectively update the conflicting object.
+  </P></LI>
+  <LI><P>
+    <A href="./lastWins.html">Last Commit Wins</A>
+    provides a different solution to this problem by initiating a new server
+    transaction automatically and replaying the user's changes, which
+    may overwrite some of the changes from the first committed transaction.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,73 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Push Domain Model Changes</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Push Domain Model Changes</H3>
+<H4>Problem</H4>
+<P>
+  When one user commits a transaction that updates the domain model
+  on the server, how can a client application display these changes
+  to a different user?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that
+  commits transactions on an application server. Changes to persistent
+  data should be propagated to everyone viewing the data.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/dataCurrency.html">Data currency</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  The client registers as an observer of specific model components
+  and the server notifies observers when changes occur.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  Changes from other transactions can only be introduced at transaction
+  boundaries, so the client developer needs to consider when it is appropriate
+  to refresh its view based on the
+  <A href="../txModel/index.html">transaction model</A>
+  that has been chosen.
+</P>
+<P>
+  Updating a view could overwrite changes that are in progress by the
+  end user. Therefore, it may be necessary to
+  <A href="../client/index.html">represent the user's changes</A>
+  independently of the view.
+</P>
+<H4>Rationale</H4>
+<P>
+  Registering as an observer makes it easy for the client to identify
+  when its view needs to be updated, because it receives a notification
+  everytime this is necessary. In contrast to
+  <A href="./pull.html">pulling domain model changes</A>,
+  there is no wasted processing time when no view updates are necessary.
+</P>
+<P>
+  If the application server allows for fine granularity of observing
+  components, the observer only needs to update its view when
+  the specific components of interest are updated. A potential disadvantage
+  is that the client must register its interest in a number of components.
+</P>
+<P>
+  A disadvantage is that the client may waste time processing notifications
+  when it is not willing to update its view. If notifications are expensive,
+  e.g. when a server has many registered observers, the server may experience
+  unnecessary delays by notifying observers who do not act on the notification.
+</P>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./pull.html">Pull Domain Model Changes</A>.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

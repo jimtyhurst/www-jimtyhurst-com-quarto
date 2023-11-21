@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>Queued Transaction</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h3>Queued Transaction</h3>
+<h4>Problem</h4>
+<p>
+  How can a client application organize a set of domain model changes
+  to be submitted in a transaction where there are many clients
+  adding new independent data?
+</p>
+<h4>Context</h4>
+<p>
+  tbd
+</p>
+<h4>Forces</h4>
+<ul>
+  <li><p>
+    <a href="../forces/length.html">Length of transaction</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/noModOutsideTx.html">Objects cannot be modified outside of a transaction</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/sigAbort.html">Signal to abort</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/txMode.html">Transaction modes supported by the application server</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/commitFailure.html">Failure to commit</a>.
+  </p></li>
+</ul>
+<h4>Solution</h4>
+<p>
+  Specify the actions to be performed in a transaction and submit
+  that specification into the queue of a transaction processor.
+</p>
+<h4>Resulting Context</h4>
+<p>
+  tbd
+</p>
+<h4>Rationale</h4>
+<p>
+  tbd
+</p>
+<h4>Related Patterns</h4>
+<p>
+  For other solutions to this same problem, see the list of patterns for
+  <a href="./index.html">selecting a transaction model</a>.
+</p>
+</body>
+</html>
