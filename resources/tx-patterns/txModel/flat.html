@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <title>Flat Transaction</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h3>Flat Transaction</h3>
+<h4>Problem</h4>
+<p>
+  How can a client application organize a set of domain model changes to be
+  submitted in a transaction that is easy to implement?
+</p>
+<h4>Context</h4>
+<p>
+  You are developing a client application that commits transactions on an
+  application server.
+</p>
+<h4>Forces</h4>
+<ul>
+  <li><p>
+    <a href="../forces/length.html">Length of transaction</a>.
+  </p></li>
+  <li><p>
+    <a href="../forces/txMode.html">Transaction modes supported by the application server</a>.
+  </p></li>
+</ul>
+<h4>Solution</h4>
+<p>
+  Group all of the changes in a single transaction that has no internal structure.
+  Use the application server's
+  <a href="../forces/txMode.html">manual transaction mode</a>
+  to open a server transaction at the beginning of the business transaction,
+  make the desired changes, and then commit the server transaction at the
+  end of the business transaction.
+</p>
+<h4>Resulting Context</h4>
+<p>
+  In order to reduce the risk of commit failures, you may want to obtain a
+  <a href="../client/lock.html">write lock</a>
+  for objects that you are changing.
+</p>
+<p>
+  If the client application includes a user interface to a person, you need to
+  consider the consequences of having relatively long transactions. Other models,
+  such as
+  <a href="./conversational.html">Conversational Transactions</a>,
+  provide a way to limit the use of system resources for long business transactions.
+</p>
+<h4>Rationale</h4>
+<p>
+  This is an easy model to implement, because it assumes that the business
+  transaction can be directly implemented as a server transaction. This model
+  is well understood by developers, as it is commonly used for relational databases.
+</p>
+<h4>Related Patterns</h4>
+<p>
+  For other solutions to this same problem, see the list of patterns for
+  <a href="./index.html">selecting a transaction model</a>.
+</p>
+<h4>Variants</h4>
+<p>
+  <a href="../client/lock.html">Locking</a> objects at the beginning of the
+  transaction is a common way to assure that the commit will be
+  successful.
+</p>
+</body>
+</html>

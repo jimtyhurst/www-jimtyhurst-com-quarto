@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <title>Updating views at transaction boundaries</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h2>Updating views at transaction boundaries</h2>
+<table>
+  <tr>
+    <th>Pattern Name</th>
+    <th>Problem</th>
+    <th>Solution</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./push.html">Push Domain Model Changes</a>
+    </td>
+    <td>
+      When one user commits a transaction that updates the domain model
+      on the server, how can a client application display these changes
+      to a different user?
+    </td>
+    <td>
+      The client registers as an observer of specific model components
+      and the server notifies observers when changes occur.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./pull.html">Pull Domain Model Changes</a>
+    </td>
+    <td>
+      When one user commits a transaction that updates the domain model
+      on the server, how can a client application display these changes
+      to a different user?
+    </td>
+    <td>
+      The client aborts its transaction periodically, in order to
+      refresh its view of the repository.
+    </td>
+  </tr>
+</table>
+</body>
+</html>

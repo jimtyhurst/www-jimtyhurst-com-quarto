@@ -1,0 +1,32 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Length of a transaction</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Length of a transaction</H3>
+<P>
+  There are several problems associated with long transactions:
+<UL>
+  <LI><P>
+    If locks are held, resources are tied up for the length of the transaction,
+    which limits the ability of multiple users to access the data.
+  </P></LI>
+  <LI><P>
+    If locks are not used, the risk of a
+    <A href="./commitFailure.html">commit failure</A>
+    increases with the length of the transaction, because there is
+    a greater time period in which other users might commit a transaction
+    that would cause a
+    <A href="./writeConflict.html">conflict</A>.
+  </P></LI>
+  <LI><P>
+    The architectures of most application servers encourage short transactions,
+    because performance problems can occur when there is a large backlog
+    open transactions competing for resources.
+  </P></LI>
+</UL>
+</P>
+</BODY>
+</HTML>

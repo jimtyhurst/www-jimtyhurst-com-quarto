@@ -18,7 +18,7 @@ M.A. thesis at the University of California, Los Angeles.
 PDF document: [JimTyhurst-1985-Tone-in-Kenyang-noun-phrases-MA-Thesis.pdf](./JimTyhurst-1985-Tone-in-Kenyang-noun-phrases-MA-Thesis.pdf)
 
 Indexed in:
-[OLAC Language Resource Catalog](http://www.language-archives.org/language/ken):
+[OLAC Language Resource Catalog](http://www.language-archives.org/language/ken)<br>
 at: [http://www.language-archives.org/item/oai:sil.org:9539](http://www.language-archives.org/item/oai:sil.org:9539)
 
 ## Abstract

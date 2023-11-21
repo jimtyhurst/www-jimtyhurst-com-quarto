@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title>Resolving conflicts between transactions</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h2>Resolving conflicts between transactions</h2>
+<table>
+  <tr>
+    <th>Pattern Name</th>
+    <th>Problem</th>
+    <th>Solution</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./firstWins.html">First Commit Wins</a>
+    </td>
+    <td>
+      How can you serialize a set of changes from overlapping business
+      transactions that affect the same object when your primary concern
+      is for users to see changes immediately as they occur?
+    </td>
+    <td>
+      Force the user to start a new business transaction starting from the
+      latest server state whenever the user's changes cause a commit failure
+      in a server transaction.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./mergeUpdates.html">Merge Conflicting Updates</a>
+    </td>
+    <td>
+      How can you serialize a set of changes from overlapping business
+      transactions that affect the same object when your primary concern
+      is that users should not have to reenter any data?
+    </td>
+    <td>
+      Selectively replay the user's changes in a new server transaction,
+      prompting the user whenever there are conflicts at the individual
+      aspect level of the object.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./lastWins.html">Last Commit Wins</a>
+    </td>
+    <td>
+      How can you serialize a set of changes from overlapping business
+      transactions that affect the same object when your primary concern
+      is that users should not have to reenter any data and the probability
+      of conflict is relatively small?
+    </td>
+    <td>
+      Replay all of the changes in a new transaction, overwriting previously
+      committed changes if necessary.
+    </td>
+  </tr>
+</table>
+</body>
+</html>

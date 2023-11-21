@@ -1,0 +1,19 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Failure to commit</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Failure to commit</H3>
+<P>
+  When trying to commit a transaction, the commit operation may fail due
+  to conflicts with transactions from other clients. In some application
+  servers, a transaction that has failed will never succeed in the future.
+  Therefore, the client must abort (or <EM>roll back</EM>) the failed transaction
+  and start a new transaction with the desired changes. Either the
+  application must provide the ability to replay the changes automatically
+  or the user will have to re-enter the data manually.
+</P>
+</BODY>
+</HTML>

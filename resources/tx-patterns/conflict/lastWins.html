@@ -1,0 +1,100 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Last Commit Wins</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Last Commit Wins</H3>
+<H4>Problem</H4>
+<P>
+  How can you serialize a set of changes from overlapping business
+  transactions that affect the same object?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that
+  commits transactions on an application server.
+  Two or more transactions may overlap while trying to update the same
+  object.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/commitFailure.html">Failure to commit</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/writeConflict.html">Write-Write conflict</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/conflictProbability.html">Probability of a commit failure</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/dataCurrency.html">Data currency</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  A transactional application server allows the first server transaction
+  to "win" in the sense that successive transactions having a
+  <A href="../forces/writeConflict.html">write-write conflict</A>
+  will fail.
+  However, it is possible for the second client to abort the failed transaction,
+  begin a new transaction,
+  <A href="../client/replay.html">replay the changes</A>,
+  and commit the new transaction.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  In order to provide the ability to replay changes, there must
+  be a way to define
+  <A href="../client/index.html">transaction specifications</A>
+  in the client.
+</P>
+<H4>Rationale</H4>
+<P>
+  This is an easy pattern to implement, as long as there is a way to define
+  <A href="../client/index.html">transaction specifications</A>
+  in the client. At first glance, this solution appears to violate the
+  objectives of a transactional system, since the second transaction may
+  overwrite the effects of the first transaction. However, as long as
+  appropriate business rules validate changes as they are played back,
+  there is no risk of changing the repository into an inconsistent state.
+</P>
+<P>
+  One of the disadvantages of this solution is that the software automatically
+  resolves the conflict without notifying the end user that a conflict occurred.
+  In situations where such notification is important or manual merging of
+  changes is more appropriate, then the
+  <A href="./firstWins.html">First Commit Wins</A>
+  or the
+  <A href="./mergeUpdates.html">Merge Conflicting Updates</A>
+  patterns are more appropriate.
+</P>
+<P>
+  The disadvantages of this solution may be acceptable when the
+  <A href="../forces/conflictProbability.html">probability of a commit failure</A>
+  is so low that it can be ignored or where commit failures typically do not
+  have business consequences. For example, suppose a customer service organization
+  changes addresses and other customer contact information, while a billing
+  organization updates a customer's purchasing information. It is possible that
+  the application server may report a conflict between a customer service
+  transaction and a billing transaction, while from a business perspective the two
+  transactions are updating different aspects of the customer object.
+</P>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./firstWins.html">First Commit Wins</A>
+    provides a different solution to this problem by forcing the user
+    to start a new business transaction, starting from the updated object
+    that results from the first committed transaction.
+  </P></LI>
+  <LI><P>
+    <A href="./mergeUpdates.html">Merge Conflicting Updates</A>
+    provides a different solution to this problem by allowing the replay
+    of changes in the last transaction to selectively update the conflicting object.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

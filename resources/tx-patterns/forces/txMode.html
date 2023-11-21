@@ -1,0 +1,33 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Transaction modes</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Transaction modes</H3>
+<P>
+  Application servers may provide several modes for beginning transactions,
+  including:
+</P>
+<DL>
+  <DT><P>
+    Manual transaction mode
+  <DD>
+    You explicitly control when your session begins a transaction. When you
+    commit or abort a transaction, you will again be outside of a transaction.
+    Changes to existing objects or new objects created while outside of a
+    transaction will not be persistent.
+  </DD>
+  </P></DT>
+  <DT><P>
+    Automatic transaction mode
+  <DD>
+    When the client establishes a session with the application server, it is
+    immediately put into a transaction and a new transaction is started
+    automatically after each commit or abort action.
+  </DD>
+  </P></DT>
+</DL>
+</BODY>
+</HTML>

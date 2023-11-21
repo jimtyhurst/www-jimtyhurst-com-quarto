@@ -1,0 +1,70 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Locked Object</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Locked Object</H3>
+<H4>Problem</H4>
+<P>
+  How can you reduce the risk of a commit failure when modifying
+  an object?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that commits
+  transactions on an application server. In your application, there is a
+  substantial risk of a commit failure due to the probability of two clients
+  modifying the same object during overlapping time intervals.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/commitFailure.html">Failure to commit</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/writeConflict.html">Write-Write conflicts</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/conflictProbability.html">Probability of a commit failure</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/length.html">Length of transaction</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  Obtain a write lock on an object before modifying it.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  You need to design your locking strategy carefully when obtaining multiple
+  locks, so as not to lead to a
+  deadlock situation where two separate processes are each waiting for a lock
+  held by the other.
+</P>
+<H4>Rationale</H4>
+<P>
+  This solution reduces the
+  <A href="../forces/conflictProbability.html">probability of commit failure</A>
+  by assuring that the locking process is the only client to be making updates
+  to an object.
+</P>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./checkout.html">Check Out Objects</A>
+    provides a way to "lock" an object for a long period of time, so that the
+    lock may be maintained across transactions and outside of transactions
+    for an indefinite amount of time.
+  </P></LI>
+  <LI><P>
+    <A href="./replay.html">Replay Changes</A>
+    can be used when the
+    <A href="../forces/conflictProbability.html">probability of commit failure</A>
+    is relatively low.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

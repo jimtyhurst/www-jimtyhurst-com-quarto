@@ -1,0 +1,75 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Aspect Change Specification</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Aspect Change Specification</H3>
+<H4>Problem</H4>
+<P>
+  How can a client application record a change to a domain model object
+  independently from that object?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a client application and you want to record changes
+  to server objects in a
+  <A href="./txSpec.html">transaction specification</A>,
+  so that the changes can be preserved across transaction boundaries.
+  For example, you might want to
+  <A href="./replay.html">replay changes</A>
+  after aborting a transaction.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/noModOutsideTx.html">Objects cannot be modified outside
+      of a transaction</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/unitsOfWork.html">Multiple units of work</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  Specify the message that must be sent in order to accomplish the
+  desired change. A message is completely specified by its receiver,
+  method signature, and arguments.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  As a result of adopting this solution, the client application is able to
+  <A href="./replay.html">replay changes</A>
+  across transaction boundaries. Therefore after an abort, the messages can be
+  sent again, in order to redo the desired changes. This solution also supports a
+  <A href="../txModel/conversational.html">conversational</A>
+  transaction model in which the change specification is built outside of a
+  transaction and then replayed inside of a transaction to cause the changes
+  to be persistent.
+</P>
+<H4>Rationale</H4>
+<P>
+  Flexibility is achieved by maintaining an independent specification of
+  changes from the results of the changes themselves. By providing a specification,
+  rather than just recording the results, it is possible to reuse the
+  specification across transaction boundaries, so that the end user is not
+  required to reenter data.
+</P>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./dirtyPool.html">Dirty Object Pool</A>
+    is an alternative to this <EM>Aspect Change Specification</EM> solution.
+    It is another way to record changes to domain objects, so that changes can
+    be copied into a new transaction.
+  </P></LI>
+  <LI><P>
+    <A href="../conflict/lastWins.html">Last Commit Wins</A>
+    and
+    <A href="../conflict/mergeUpdates.html">Merge Conflicting Updates</A>
+    provide specific strategies for replaying changes.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

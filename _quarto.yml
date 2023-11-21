@@ -3,6 +3,8 @@ project:
   output-dir: _site
   resources:
     - "*.pdf"
+    - "*.html"
+    - style/tx-patterns.css
   preview:
     port: 8000
     browser: true
@@ -31,7 +33,8 @@ format:
     theme:
       light: litera
       dark: darkly
-    css: styles.css
+    css:
+      - styles.css
     toc: true
     embed-resources: true
     link-external-icon: true

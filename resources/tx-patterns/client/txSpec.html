@@ -1,0 +1,105 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Transaction Specification</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Transaction Specification</H3>
+<H4>Problem</H4>
+<P>
+  How can changes to domain model objects be saved independently from
+  the domain model?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that commits
+  transactions on an application server. There are several reasons why you might
+  want to be able to replay a user's business transaction after aborting
+  a server transaction:
+</P>
+<UL>
+  <LI><P>
+    If a transaction fails, you need to abort the transaction to get a clean view
+    of the repository. However, rather than losing the user's changes, you would
+    like to be able to attempt the transaction again.
+  </P></LI>
+  <LI><P>
+    For long business transactions, it may be desirable to change persistent
+    objects while outside of a server transaction. However, changes to persistent
+    objects can only be saved in the repository while in a transaction.
+    Therefore, you might want to allow the user to modify an object outside
+    of a transaction, then replay the changes inside of a transaction.
+  </P></LI>
+  <H4>Forces</H4>
+  <UL>
+    <LI><P>
+      <a href="../forces/commitFailure.html">Failure to commit</a>.
+    </P></LI>
+    <LI><P>
+      <a href="../forces/writeConflict.html">Write-Write conflict</a>.
+    </P></LI>
+    <LI><P>
+      <a href="../forces/noModOutsideTx.html">Objects cannot be modified outside
+        of a transaction</a>.
+    </P></LI>
+  </UL>
+  <H4>Solution</H4>
+  <P>
+    Save the sequence of messages that can be sent to cause the desired
+    changes to occur.
+  </P>
+  <P>
+    A transaction specification represents a sequence of changes to server
+    objects. These change specifications are maintained independent of the
+    target objects, so that the changes can be preserved after the
+    application server aborts a transaction, rolling back the view
+    of the repository to a previous state. The changes can then be
+    replayed in a new transaction.
+  </P>
+  <H4>Resulting Context</H4>
+  <P>
+    As a result of adopting this solution, the developer must decide how to keep
+    a record of changes in a business transaction.
+    <A href="./aspectChange.html">Aspect Change Specification</A>
+    records the sequence of messages that must be sent in order to cause the
+    desired changes. After an abort, the messages can be sent again,
+    in order to redo the desired changes.
+  </P>
+  <H4>Rationale</H4>
+  <P>
+    This solution is relatively easy to implement, although it requires explicit
+    code in the client application to record the messages sent to domain objects.
+  </P>
+  <P>
+    The solution does not involve any copying. Therefore, it does not introduce
+    a large number of extra temporary objects into the environment. It also
+    means that references between objects are maintained with no extra effort.
+  </P>
+  <P>
+    By recording the sequence of messages, business rules that are triggered
+    by setter methods will reapply in the correct sequence whenever the
+    transaction is replayed.
+  </P>
+  <H4>Related Patterns</H4>
+  <UL>
+    <LI><P>
+      <A href="./aspectChange.html">Aspect Change Specification</A>
+      is a way to record user-initiated changes to domain objects which
+      may be replayed.
+    </P></LI>
+    <LI><P>
+      <A href="./dirtyPool.html">Dirty Object Pool</A>
+      is an alternative to this <EM>Transaction Specification</EM> solution.
+      It is another way to record changes to domain objects, so that changes can
+      be copied into a new transaction.
+    </P></LI>
+    <LI><P>
+      <A href="../conflict/lastWins.html">Last Commit Wins</A>
+      and
+      <A href="../conflict/mergeUpdates.html">Merge Conflicting Updates</A>
+      provide specific strategies for replaying changes.
+    </P></LI>
+  </UL>
+</BODY>
+</HTML>

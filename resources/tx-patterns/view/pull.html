@@ -1,0 +1,69 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Pull Domain Model Changes</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Pull Domain Model Changes</H3>
+<H4>Problem</H4>
+<P>
+  When one user commits a transaction that updates the domain model
+  on the server, how can a client application display these changes
+  to a different user?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that
+  commits transactions on an application server. Changes to persistent
+  data should be propagated to everyone viewing the data.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/dataCurrency.html">Data currency</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  The client aborts its transaction periodically, in order to
+  refresh its view of the repository.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  Changes from other transactions can only be introduced at transaction
+  boundaries, so the client developer needs to consider when it is appropriate
+  to refresh its view based on the
+  <A href="../txModel/index.html">transaction model</A>
+  that has been chosen.
+</P>
+<P>
+  Updating a view could overwrite changes that are in progress by the
+  end user. Therefore, it may be necessary to
+  <A href="../client/index.html">represent the user's changes</A>
+  independently of the view.
+</P>
+<H4>Rationale</H4>
+<P>
+  An advantage of this solution is that it puts the client in control of when
+  to receive updates of shared persistent data. The client explicitly checks
+  for updates whenever it is willing to update its view.
+  In contrast to
+  <A href="./push.html">pushing domain model changes</A>,
+  there is no wasted processing time when the client is not interested
+  in updating its view.
+</P>
+<P>
+  A disadvantage is that the client may waste time and resources polling for
+  changes when none have occurred. If updating a view is expensive, e.g. on a slow
+  network, the client may experience unnecessary delays when there are no
+  changes to the components in which it is interested.
+</P>
+<H4>Related Patterns</H4>
+<UL>
+  <LI><P>
+    <A href="./push.html">Push Domain Model Changes</A>.
+  </P></LI>
+</UL>
+</BODY>
+</HTML>

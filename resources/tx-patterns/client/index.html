@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <title>Defining transactions in a client application</title>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</head>
+<body>
+<h2>Defining transactions in a client application</h2>
+<table>
+  <tr>
+    <th>Pattern Name</th>
+    <th>Problem</th>
+    <th>Solution</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="./replay.html">Replay Changes</a>
+    </td>
+    <td>
+      How can a client application preserve a user's changes after aborting
+      a transaction?
+    </td>
+    <td>
+      The client keeps the changes independent from the view of the repository,
+      so that when a view is refreshed, the changes may be replayed.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./txSpec.html">Transaction Specification</a>
+    </td>
+    <td>
+      How can changes to domain model objects be saved independently from
+      the domain model?
+    </td>
+    <td>
+      Save the sequence of messages that can be sent to cause the desired
+      changes to occur.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./aspectChange.html">Aspect Change Specification</a>
+    </td>
+    <td>
+      How can a client application record a change to a domain model object
+      independently from that object?
+    </td>
+    <td>
+      Specify the message that must be sent in order to accomplish the
+      desired change. A message is completely specified by its receiver,
+      method signature, and arguments.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./dirtyPool.html">Dirty Object Pool</a>
+    </td>
+    <td>
+      How can a client application record a change to a domain model object
+      independently from that object?
+    </td>
+    <td>
+      Keep a copy of the object in its changed state.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <A href="./lock.html">Locked Object</A>
+    </td>
+    <td>
+      How can you reduce the risk of a commit failure when modifying
+      an object?
+    </td>
+    <td>
+      Obtain a write lock on an object before modifying it.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <A href="./checkout.html">Check Out Objects</A>
+    </td>
+    <td>
+      How can you maintain a lock on an object for a long period of time?
+    </td>
+    <td>
+      Develop a lock table that holds persistent locks for objects that
+      have been checked out. The application checks out a copy of the
+      object, makes changes, and then checks in the changed copy.
+    </td>
+  </tr>
+</table>
+</body>
+</html>

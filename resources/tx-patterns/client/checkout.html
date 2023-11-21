@@ -1,0 +1,60 @@
+<!doctype html>
+<HTML>
+<HEAD>
+  <TITLE>Check Out Objects</TITLE>
+  <link rel="stylesheet" href="../../../style/tx-patterns.css" type="text/css">
+</HEAD>
+<BODY>
+<H3>Check Out Objects</H3>
+<H4>Problem</H4>
+<P>
+  How can you maintain a lock on an object for a long period of time?
+</P>
+<H4>Context</H4>
+<P>
+  You are developing a multi-user application that commits
+  transactions on an application server. In your application, there is a
+  substantial risk of a commit failure due to the probability of two clients
+  modifying the same object during overlapping time intervals and you need to
+  lock objects for an extended period of time.
+</P>
+<H4>Forces</H4>
+<UL>
+  <LI><P>
+    <a href="../forces/length.html">Length of transaction</a>.
+  </P></LI>
+  <LI><P>
+    <a href="../forces/noModOutsideTx.html">Objects cannot be modified outside of a transaction</a>.
+  </P></LI>
+</UL>
+<H4>Solution</H4>
+<P>
+  Develop a lock table that holds persistent locks for objects that
+  have been checked out. The application checks out a copy of the
+  object, makes changes, and then checks in the changed copy.
+</P>
+<H4>Resulting Context</H4>
+<P>
+  Since the application is making changes outside of a transaction, it will
+  need to
+  <A href="./replay.html">replay the changes</A>
+  within a server transaction. Also, the application must implement the lock table,
+  which has its own concurrency issues.
+</P>
+<H4>Rationale</H4>
+<P>
+  Application servers typically provide a locking mechanism within transactions.
+  However, if updates need to be made during a long period of time,
+  it is unreasonable to keep a transaction open
+  while the changes are made. For example, if changes are made by an end user
+  through a user interface, it is advisable for the changes to be specified
+  outside of a transaction. In this case, the application must implement
+  its own locking mechanism that will work across transactions.
+</P>
+<H4>Related Patterns</H4>
+<P>
+  <A href="./replay.html">Replay Changes</A>
+  solves some of the problems in the resulting context set up by this pattern.
+</P>
+</BODY>
+</HTML>
