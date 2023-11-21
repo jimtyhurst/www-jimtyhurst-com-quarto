@@ -8,8 +8,6 @@ categories: [civic tech]
 format: html
 ---
 
-Copyright &copy; 2020 [Jim Tyhurst](https://www.jimtyhurst.com)  
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
 
 I worked briefly on a civic tech project for rapid transit and started
 reading as much as I could about transit issues.
@@ -486,3 +484,8 @@ Keep Oregon Moving Act. [HB 2017](https://www.oregon.gov/ODOT/Pages/HB2017.aspx)
 * The amount of planning and preparation needed to use transit and stay on schedule
 * The amount of time lost when transit schedules do not directly conform to work, school, or activity schedules
 * Average wait times
+
+---
+
+Copyright &copy; 2020 [Jim Tyhurst](https://www.jimtyhurst.com)  
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).

@@ -7,9 +7,6 @@ categories: [collaboration]
 format: html
 ---
 
-Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
-
 I have been interested in cooperatives for software developers for a long time.
 These are my notes about cooperatives.
 
@@ -482,3 +479,7 @@ personal data store cooperative; wants to make it easier to host data and to sta
     * [MyData](https://mydata.org/) just had a conference: 10-12 Dec 2020.
     * https://www.midata.coop/
 
+---
+
+Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).

@@ -6,9 +6,6 @@ categories: [collaboration]
 format: html
 ---
 
-Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
-
 These are references that I found useful when thinking about working remotely.
 
 ---
@@ -131,3 +128,8 @@ Listed in reverse chronological order.
 ## Services for Remote Workers
 * [WorkFrom.co](https://workfrom.co/)  
   Find a remote-friendly space where you can work with good wifi.
+
+---
+
+Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).

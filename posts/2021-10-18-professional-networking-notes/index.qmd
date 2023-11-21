@@ -6,9 +6,6 @@ categories: [collaboration, freelancing]
 format: html
 ---
 
-Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
-
 These are links to a few articles and books that I found particularly 
 interesting with respect to professional networking. Some of them are 
 behind paywalls, so you may not have access to all of them.
@@ -38,3 +35,8 @@ Listed in reverse chronological order.
     * "Why traditional networking is not working".
 * Tiziana Casciaro, Francesca Gino, Maryam Kouchaki. 2014-10-06. [The Contaminating Effects of Building Instrumental Ties: How Networking Can Make Us Feel Dirty](https://journals.sagepub.com/doi/full/10.1177/0001839214554990). [Administrative Science Quarterly](https://journals.sagepub.com/home/asq).
 * [Dorie Clark](https://dorieclark.com/resources/articles/), Lisa Chau. 2013-04-17. [Networking Should Never Be Forced](https://www.forbes.com/sites/dorieclark/2013/04/17/networking-should-never-be-forced/). [Forbes](https://www.forbes.com/).
+
+---
+
+Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
