@@ -8,7 +8,7 @@ freeze: auto
 title-block-banner: true
 toc: true
 page-layout: article
-citation: true
+citation: false
 
 author:
   - name: Jim Tyhurst
