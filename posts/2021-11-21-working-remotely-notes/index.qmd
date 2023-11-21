@@ -1,27 +1,17 @@
 ---
 title: 'Working Remotely: Notes'
-description: 'Personal research about working remotely.'
+description: 'These are references that I found useful when thinking about working remotely.'
 date: '2021-11-21'
 categories: [collaboration]
 format: html
 ---
 
-# Working Remotely: Notes
-
 Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
 
-**Contents**
+These are references that I found useful when thinking about working remotely.
 
-* [References](#references)
-* [Business trends](#business-trends)
-    * [Primary sources](#primary-sources)
-    * [Summaries and reviews](#summaries-and-reviews)
-* [Conferences](#conferences)
-* [Software Tools](#software-tools)
-* [Remote Job Search](#remote-job-search)
-* [Services for Remote Workers](#services-for-remote-workers)
-
+---
 
 ## References
 * [Jonathan Turner](https://www.agilealliance.org/author/8027426). 2021. [One Year of Remote Mob Programming](https://www.agilealliance.org/resources/experience-reports/one-year-of-remote-mob-programming/). Agile Alliance [Experience Report](https://www.agilealliance.org/resources/experience-reports/).

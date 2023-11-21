@@ -1,5 +1,5 @@
 ---
-title: 'Transit Resources'
+title: 'Transit Resources: Notes'
 description: 'I worked briefly on a civic tech project for rapid transit and started 
   reading as much as I could about transit issues. This is a collection of references 
   and notes for some articles that I read.'
@@ -7,8 +7,6 @@ date: '2020-02-10'
 categories: [civic tech]
 format: html
 ---
-
-# Transit Resources
 
 Copyright &copy; 2020 [Jim Tyhurst](https://www.jimtyhurst.com)  
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
@@ -23,20 +21,6 @@ research. These are just my personal notes of material that I have already
 read or references to material that I hope to read soon.
 
 ---
-
-**Contents**
-
-* [Books and Articles](#books-and-articles)
-* [Advocacy and Research Groups](#advocacy-and-research-groups)
-    * [Portland, Oregon](#portland-oregon-advocacy-and-research-groups)
-    * [Non-Portland](#non-portland-advocacy-and-research-groups)
-* [Professional Organizations](#professional-organizations)
-* [Transit Agencies](#transit-agencies)
-* [Legislation](#legislation)
-* [Glossary](#glossary)
-
----
-
 
 ## Books and Articles
 Sorted alphabetically by author's last name, then in descending chronological order.

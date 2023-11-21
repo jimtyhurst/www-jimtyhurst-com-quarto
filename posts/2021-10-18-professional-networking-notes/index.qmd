@@ -1,12 +1,10 @@
 ---
-title: 'Professional Networking'
+title: 'Professional Networking: Notes'
 description: 'References and notes for some articles that I have read about professional networking.'
 date: '2021-10-18'
 categories: [collaboration, freelancing]
 format: html
 ---
-
-# Professional networking
 
 Copyright &copy; 2021 [Jim Tyhurst](https://www.jimtyhurst.com)  
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
@@ -14,6 +12,8 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 In
 These are links to a few articles and books that I found particularly 
 interesting with respect to professional networking. Some of them are 
 behind paywalls, so you may not have access to all of them.
+
+---
 
 Listed in reverse chronological order.
 
