@@ -8,6 +8,11 @@ date: '2021-02-24'
 format: html
 ---
 
+I have worked with some people who have dyslexia and I have some friends
+who have worked around it. These are some notes from my reading about dyslexia.
+I was especially interested in helping a young student who was having difficulty
+learning to read and learning to spell.
+
 I use these personal notes to help me remember articles and books that I have read. 
 I hope they might be a helpful summary and introduction for others. 
 However, these notes are _not_ intended to be an exhaustive annotated bibliography 
