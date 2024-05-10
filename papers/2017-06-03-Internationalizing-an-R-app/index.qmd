@@ -11,7 +11,7 @@ format: html
 
 Jim Tyhurst. 2017-06-03.
 Internationalizing an R application for model parameters that vary per country.
-Lightening talk presented at CascadiaRConf 2017, Portland, OR.
+Lightning talk presented at CascadiaRConf 2017, Portland, OR.
 June 3, 2017.
 
 ## References
