@@ -27,6 +27,6 @@ Expose `_site/index.html`.
 
 ## License
 
-Copyright (c) 2018-2023 Jim Tyhurst
+Copyright &copy; 2018-2025 Jim Tyhurst
 
-Licensed under the [Apache License, Version 2.0](./LICENSE)
+Licensed under the [Apache License, Version 2.0](./LICENSE).
